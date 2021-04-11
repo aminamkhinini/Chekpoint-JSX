@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import React,{NewComponent}from 'react';
+import image1 from "./img1.jpg";
+import './style.css';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+<div className="App" >
 
+<div style={{border: 'solid 1px black', maxWidth: '100vw',position:'center'}}>
+          <h1  className={`title red`} >Amina Mkhinini</h1>
+          <br/>
+          <img src={image1} alt ="img1" className="image1" />
+          <br/>
+          <img src="/img2.jpg" alt="img2"className="image1"/>
+        </div>
+        <video width={320} height={240} controls>
+          <source src="/video1.mp4" type="video/mp4" />
+        </video>
+      </div>
+    );
+  }
 export default App;
+
+
+
+
+        
+
